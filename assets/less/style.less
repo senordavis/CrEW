@@ -1,0 +1,108 @@
+// out:../css/style.css
+
+//==Imports
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800);
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
+@import "variables.less";
+@import "bootstrap/bootstrap.less";
+
+//==Media queries shorthand mixins
+@tiny:      ~"(min-width: @{screen-xs-min})";
+@small:      ~"(min-width: @{screen-sm-min})";
+@medium:      ~"(min-width: @{screen-md-min})";
+@large:      ~"(min-width: @{screen-lg-min})";
+
+//==Styles
+body {
+    background-color: #eee;
+    font-family: 'Open Sans', @font-family-sans-serif;
+    font-weight: 300;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    @media @small {padding-top: 50px;}
+}
+
+.navbar, .nav {
+    .make-row;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0px;
+    background-color: rgba(0,0,0,.7);
+    
+    li a {
+        height: 60px;
+        line-height: 60px;
+        padding-top: 0;
+        padding-left: 30px;
+    }
+}
+
+.site-header {
+    .make-md-column(4);
+    padding-top: 50px;
+}
+
+.header-background {
+    .make-row;
+    background-image: url(../images/street.jpg);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center center;
+}
+
+.portrait {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 50px auto;
+    overflow: hidden;
+    border-radius: 100px;
+    border: 10px solid rgba(255,255,255,.6);
+}
+
+main {
+    .make-md-column(8);
+    background-color: white;
+}
+
+.intro {
+    .make-row;
+    background-color: @brand-warning;
+    
+    h2 {
+        margin-bottom: 0px;
+        font-weight: 300;
+        
+        .author {font-weight: 800;}
+        br {.hidden-xs;.hidden-sm;}
+    }
+}
+
+.recent {.well;}
+
+.articles-list {.make-row;
+    .item img {.make-sm-column(5); padding: 5px;}
+    p.lead { .make-sm-column(7); font-size: 16px;}
+}
+
+.title {font-weight: 700;}
+
+.content {padding: 25px;}
+
+footer {
+    .make-row;
+    background-color: tomato;
+    text-align: center;
+    min-height: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @media @small {line-height: 80px;}
+    
+    > section {.make-sm-column(6);}
+    
+    .copyright {@media @small {text-align: left;} }
+    .social {@media @small {text-align: right;} }
+}
