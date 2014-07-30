@@ -18,8 +18,8 @@ body {
     font-family: 'Open Sans', @font-family-sans-serif;
     font-weight: 300;
     padding-top: 15px;
-    padding-bottom: 50px;
-    @media @small {padding-top: 50px;}
+    padding-bottom: 15px;
+    @media @small {padding-top: 50px;padding-bottom: 50px;}
 }
 
 .navbar, .nav {
@@ -27,13 +27,18 @@ body {
     margin-bottom: 0;
     border: none;
     border-radius: 0px;
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0,.5);
     
     li a {
         height: 60px;
         line-height: 60px;
         padding-top: 0;
         padding-left: 30px;
+        color: white;
+        
+        &:hover {
+            background-color: @brand-primary;
+        }
     }
 }
 
@@ -44,7 +49,7 @@ body {
 
 .header-background {
     .make-row;
-    background-image: url(../images/street.jpg);
+    background-image: url(../images/earth-and-moon.jpg);
     position: absolute;
     top: 0;
     width: 100%;
@@ -70,7 +75,11 @@ main {
 
 .intro {
     .make-row;
-    background-color: @brand-warning;
+    background-color: lighten(@brand-primary, 35%); //#b2dcf2;
+    background-image: url(../images/milky-way-light.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 250px;
     
     h2 {
         margin-bottom: 0px;
@@ -81,11 +90,19 @@ main {
     }
 }
 
+.twitter {
+     .make-row;
+    background-color: lighten(@brand-primary, 40%);
+    #twitter-widget-0, a{width: 760px !important;}
+    .u-photo avatar {display: none !important;}
+}
+
 .recent {.well;}
 
 .articles-list {.make-row;
     .item img {.make-sm-column(5); padding: 5px;}
-    p.lead { .make-sm-column(7); font-size: 16px;}
+    .article-intro { .make-sm-column(7);}
+    p.lead {font-size: 16px;}
 }
 
 .title {font-weight: 700;}
@@ -94,7 +111,8 @@ main {
 
 footer {
     .make-row;
-    background-color: tomato;
+    background-color: darken(@brand-primary, 20%);
+    color: white;
     text-align: center;
     min-height: 80px;
     padding-top: 10px;
