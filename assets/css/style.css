@@ -5904,8 +5904,6 @@ button.close {
 .navbar:after,
 .nav:before,
 .nav:after,
-.header-background:before,
-.header-background:after,
 .intro:before,
 .intro:after,
 .twitter:before,
@@ -5934,7 +5932,6 @@ footer:after {
 .modal-footer:after,
 .navbar:after,
 .nav:after,
-.header-background:after,
 .intro:after,
 .twitter:after,
 .articles-list:after,
@@ -6237,24 +6234,16 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 50px;
+  background-image: url(../images/earth-and-moon.jpg);
+  z-index: -1;
+  background-size: cover;
+  background-position: center center;
 }
 @media (min-width: 992px) {
   .site-header {
     float: left;
     width: 33.33333333%;
   }
-}
-.header-background {
-  margin-left: -15px;
-  margin-right: -15px;
-  background-image: url(../images/earth-and-moon.jpg);
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-size: cover;
-  background-position: center center;
 }
 .portrait {
   width: 150px;
