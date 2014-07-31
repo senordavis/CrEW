@@ -6221,6 +6221,16 @@ body {
 .nav li a:hover {
   background-color: #428bca;
 }
+.navbar li a .fa,
+.nav li a .fa {
+  margin-right: 8px;
+}
+.navbar li a .fa-space-shuttle,
+.nav li a .fa-space-shuttle {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin-right: 2px;
+}
 .site-header {
   position: relative;
   min-height: 1px;
