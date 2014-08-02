@@ -1,0 +1,7 @@
+site-name: Neil Armstrong
+-
+site-description: This is the description for the site.
+-
+author: Neil Armstrong
+-
+twitter-sn: astro_reid

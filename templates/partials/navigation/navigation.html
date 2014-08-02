@@ -1,8 +1,8 @@
-<ul id="navigation" class="col two">
+<ul class="nav">
+ <li><a href="@root_path"><i class="fa fa-home fa-lg"></i> Home</a></li>
   foreach $root do
     <li>
-      <a href="@url">@title</a>
-      :children
+      <a href="@url"><i class="fa fa-lg @icon"></i> @title</a>
     </li>
   endforeach
 </ul>
