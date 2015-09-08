@@ -1,0 +1,7 @@
+title: Contact
+-
+icon: fa-envelope
+-
+intro-paragraph: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consequuntur laudantium, corporis culpa dolores dignissimos quod pariatur ut quos voluptatem, accusantium soluta, libero doloremque. Asperiores adipisci quae rerum minus quasi?
+-
+content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consequuntur laudantium, corporis culpa dolores dignissimos quod pariatur ut quos voluptatem, accusantium soluta, libero doloremque. Asperiores adipisci quae rerum minus quasi?

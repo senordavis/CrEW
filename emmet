@@ -1,0 +1,1 @@
+div.collapse>ul.nav>li*4>a[href="@url"]>i.fa.fa-lg.@icon{Menu}

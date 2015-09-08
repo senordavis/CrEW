@@ -81,6 +81,22 @@ main {
     }
 }
 
+.pageheader {
+    .make-row;
+    background-color: lighten(@brand-primary, 35%); //#b2dcf2;
+    background-image: url(../images/milky-way-light.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 250px;
+    
+    h2 {
+        margin-bottom: 0px;
+        font-weight: 800;
+        font-size: 45px;
+    }
+}
+
+
 .twitter {
      .make-row;
     background-color: lighten(@brand-primary, 40%);
@@ -91,6 +107,7 @@ main {
 .recent {.well;}
 
 .articles-list {.make-row;
+    .item {clear:both;}
     .item img {.make-sm-column(5); padding: 5px;}
     .article-intro { .make-sm-column(7);}
     p.lead {font-size: 16px;}
